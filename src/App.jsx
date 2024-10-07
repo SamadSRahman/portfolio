@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithubSquare } from "react-icons/fa";
 
 const App = () => {
   const fadeIn = {
@@ -91,8 +93,13 @@ const App = () => {
               },
               {
                 title: "Senco - Celebrations",
-                link:"https://msdhoni-menofplatinum.com/",
+                link:"https://sencocelebrations.com/",
                 desc: "A web app for Senco’s Lakshmi Puja celebration, offering personalized videos, momentos, and a chance to win a gold coin for registered users.",
+              },
+              {
+                title: "E-commerce Website",
+                link:"https://e-commerce-am.vercel.app/",
+                desc: "A full-stack e-commerce app with real-time content management, featuring a stylish design and seamless checkout experience.",
               },
             ].map((project) => (
               <motion.div
@@ -130,14 +137,14 @@ const App = () => {
               href="https://github.com/SamadSRahman/"
               className="text-gray-400 hover:text-white transition duration-300"
             >
-              GitHub
+              <FaGithubSquare size={'50'}/>
             </a>
             <a
               target="_blank"
               href="https://www.linkedin.com/in/samadrahman/"
               className="text-gray-400 hover:text-white transition duration-300"
             >
-              LinkedIn
+             <FaLinkedin size={'50'}/>
             </a>
           </div>
         </motion.section>
